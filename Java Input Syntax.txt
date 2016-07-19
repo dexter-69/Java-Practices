@@ -1,0 +1,27 @@
+                          Getting Input in JAVA ( various methods )
+
+Scanner class
+
+Scanner scan = new Scanner(System.in);
+String s = scan.next();
+int i = scan.nextInt();
+
+
+BufferedReader and InputStreamReader classes
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String s = br.readLine();
+int i = Integer.parseInt(br.readLine());
+
+
+DataInputStream class ( Use this Only for Getting Integer )
+
+DataInputStream dis = new DataInputStream(System.in);
+int i = dis.readInt();
+The readLine method from the DataInputStream class has been deprecated. To get String value, you should use the previous solution with BufferedReader
+
+Console class ( May or May not work in all IDEs)
+
+Console console = System.console();
+String s = console.readLine();
+int i = Integer.parseInt(console.readLine());
