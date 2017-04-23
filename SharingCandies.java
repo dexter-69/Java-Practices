@@ -43,7 +43,7 @@
         ++count;
 		//If still not found set answer to number itself
         if(!flag) ans = n;
-		//if count is greater than p, then ans = 0
+		//if count is still less than p, then ans = 0
         return (p > count ? 0 : ans);
     }
 
